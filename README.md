@@ -2,7 +2,7 @@ Example ios project that embedded with react native view. Basically it's not wor
 
 ---
 
-```git
+```diff
   pod 'React', :path => './node_modules/react-native', :subspecs => [
     'Core',
 +    'BatchedBridge',
