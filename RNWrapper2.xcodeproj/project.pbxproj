@@ -13,9 +13,11 @@
 		28019D3D1F72F99600D5019B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28019D3B1F72F99600D5019B /* Main.storyboard */; };
 		28019D3F1F72F99600D5019B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28019D3E1F72F99600D5019B /* Assets.xcassets */; };
 		28019D421F72F99600D5019B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28019D401F72F99600D5019B /* LaunchScreen.storyboard */; };
+		72A3C5CAD3D302E6DF500EF9 /* libPods-RNWrapper2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E0986663012570038E8435 /* libPods-RNWrapper2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15E0986663012570038E8435 /* libPods-RNWrapper2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWrapper2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28019D2F1F72F99600D5019B /* RNWrapper2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNWrapper2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28019D331F72F99600D5019B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28019D351F72F99600D5019B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		28019D3E1F72F99600D5019B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28019D411F72F99600D5019B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28019D431F72F99600D5019B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8038AA53829710CCF2767723 /* Pods-RNWrapper2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWrapper2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNWrapper2/Pods-RNWrapper2.debug.xcconfig"; sourceTree = "<group>"; };
+		94D5463D23F1948436586FB1 /* Pods-RNWrapper2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWrapper2.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNWrapper2/Pods-RNWrapper2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A3C5CAD3D302E6DF500EF9 /* libPods-RNWrapper2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				28019D311F72F99600D5019B /* RNWrapper2 */,
 				28019D301F72F99600D5019B /* Products */,
+				E2E05E56F8A94014771E82C7 /* Pods */,
+				3954E451CFB2C4F043B2299F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3954E451CFB2C4F043B2299F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15E0986663012570038E8435 /* libPods-RNWrapper2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2E05E56F8A94014771E82C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8038AA53829710CCF2767723 /* Pods-RNWrapper2.debug.xcconfig */,
+				94D5463D23F1948436586FB1 /* Pods-RNWrapper2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28019D461F72F99600D5019B /* Build configuration list for PBXNativeTarget "RNWrapper2" */;
 			buildPhases = (
+				158695E82B33EAD1A6A157B2 /* [CP] Check Pods Manifest.lock */,
 				28019D2B1F72F99600D5019B /* Sources */,
 				28019D2C1F72F99600D5019B /* Frameworks */,
 				28019D2D1F72F99600D5019B /* Resources */,
+				FEC9613DC1B09D53CA94DB60 /* [CP] Embed Pods Frameworks */,
+				82F414DE8ECE453761E2393E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		158695E82B33EAD1A6A157B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82F414DE8ECE453761E2393E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNWrapper2/Pods-RNWrapper2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC9613DC1B09D53CA94DB60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNWrapper2/Pods-RNWrapper2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28019D2B1F72F99600D5019B /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		28019D471F72F99600D5019B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8038AA53829710CCF2767723 /* Pods-RNWrapper2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RNWrapper2/Info.plist;
@@ -283,6 +359,7 @@
 		};
 		28019D481F72F99600D5019B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D5463D23F1948436586FB1 /* Pods-RNWrapper2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RNWrapper2/Info.plist;
