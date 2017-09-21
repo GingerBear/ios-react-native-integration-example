@@ -16,10 +16,20 @@ target 'RNWrapper2' do
     'RCTText',
     'RCTNetwork',
     'RCTWebSocket', # needed for debugging
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTSettings',
+    'RCTVibration',
     # Add any other subspecs you want to use in your project
   ]
   # Explicitly include Yoga if you are using RN >= 0.42.0
   pod 'Yoga', :path => './node_modules/react-native/ReactCommon/yoga'
 
+  pod 'RNDeviceInfo', :path => './node_modules/react-native-device-info'
+  pod 'react-native-geocoder', :path => './node_modules/react-native-geocoder'
+  pod 'react-native-maps', :path => './node_modules/react-native-maps'
 
 end

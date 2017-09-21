@@ -1,45 +1,84 @@
 PODS:
-  - React/BatchedBridge (0.48.3):
+  - React (0.46.4):
+    - React/Core (= 0.46.4)
+  - react-native-geocoder (0.4.8):
+    - React
+  - react-native-maps (0.16.4):
+    - React
+  - React/BatchedBridge (0.46.4):
     - React/Core
     - React/cxxreact_legacy
-  - React/Core (0.48.3):
-    - Yoga (= 0.48.3.React)
-  - React/cxxreact_legacy (0.48.3):
+  - React/Core (0.46.4):
+    - Yoga (= 0.46.4.React)
+  - React/cxxreact_legacy (0.46.4):
     - React/jschelpers_legacy
-  - React/DevSupport (0.48.3):
+  - React/DevSupport (0.46.4):
     - React/Core
     - React/RCTWebSocket
-  - React/jschelpers_legacy (0.48.3)
-  - React/RCTBlob (0.48.3):
+  - React/jschelpers_legacy (0.46.4)
+  - React/RCTActionSheet (0.46.4):
     - React/Core
-  - React/RCTNetwork (0.48.3):
+  - React/RCTAnimation (0.46.4):
     - React/Core
-  - React/RCTText (0.48.3):
+  - React/RCTGeolocation (0.46.4):
     - React/Core
-  - React/RCTWebSocket (0.48.3):
+  - React/RCTImage (0.46.4):
     - React/Core
-    - React/RCTBlob
-  - Yoga (0.48.3.React)
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.46.4):
+    - React/Core
+  - React/RCTNetwork (0.46.4):
+    - React/Core
+  - React/RCTSettings (0.46.4):
+    - React/Core
+  - React/RCTText (0.46.4):
+    - React/Core
+  - React/RCTVibration (0.46.4):
+    - React/Core
+  - React/RCTWebSocket (0.46.4):
+    - React/Core
+  - RNDeviceInfo (0.9.3):
+    - React
+  - Yoga (0.46.4.React)
 
 DEPENDENCIES:
+  - react-native-geocoder (from `./node_modules/react-native-geocoder`)
+  - react-native-maps (from `./node_modules/react-native-maps`)
   - React/BatchedBridge (from `./node_modules/react-native`)
   - React/Core (from `./node_modules/react-native`)
   - React/DevSupport (from `./node_modules/react-native`)
+  - React/RCTActionSheet (from `./node_modules/react-native`)
+  - React/RCTAnimation (from `./node_modules/react-native`)
+  - React/RCTGeolocation (from `./node_modules/react-native`)
+  - React/RCTImage (from `./node_modules/react-native`)
+  - React/RCTLinkingIOS (from `./node_modules/react-native`)
   - React/RCTNetwork (from `./node_modules/react-native`)
+  - React/RCTSettings (from `./node_modules/react-native`)
   - React/RCTText (from `./node_modules/react-native`)
+  - React/RCTVibration (from `./node_modules/react-native`)
   - React/RCTWebSocket (from `./node_modules/react-native`)
+  - RNDeviceInfo (from `./node_modules/react-native-device-info`)
   - Yoga (from `./node_modules/react-native/ReactCommon/yoga`)
 
 EXTERNAL SOURCES:
   React:
     :path: ./node_modules/react-native
+  react-native-geocoder:
+    :path: ./node_modules/react-native-geocoder
+  react-native-maps:
+    :path: ./node_modules/react-native-maps
+  RNDeviceInfo:
+    :path: ./node_modules/react-native-device-info
   Yoga:
     :path: ./node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
-  React: 748a63a3a08cef2864657ad752a5ca7393e07fc2
-  Yoga: b3337798e426de90f48662cf0fe2ee1a844075e1
+  React: 596d8774642d10fea20b1f24cc591fcf633f73ad
+  react-native-geocoder: eef18704f1bf9dd2b97a61037105dd76e436ac5e
+  react-native-maps: b04d264bcd6d042a878c07ff2b759e1e79fb3108
+  RNDeviceInfo: dc3cbee96cd2392cf03d6ff6191dc15f1606a166
+  Yoga: 98e24da91afe33bb43fedaf27dafede269c04fe8
 
-PODFILE CHECKSUM: 55d3e32e0da68cdb9facfa4149e0588f46fa48aa
+PODFILE CHECKSUM: 1e81670b04879aa318a4cf09b5501d47f1c0e2dd
 
 COCOAPODS: 1.2.1
