@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
-#import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
 @interface ViewController ()
@@ -29,30 +29,17 @@
 }
 
 - (IBAction)highScoreButtonPressed:(id)sender {
-    NSLog(@"High Score Button Pressed");
-    // NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
-    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-    
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     RCTRootView *rootView =
-    [[RCTRootView alloc] initWithBundleURL: jsCodeLocation
-                                moduleName: @"MyReactNativeApp"
-                         initialProperties:
-     @{
-       @"scores" : @[
-               @{
-                   @"name" : @"Alex",
-                   @"value": @"42"
-                   },
-               @{
-                   @"name" : @"Joel",
-                   @"value": @"10"
-                   }
-               ]
-       }
-                             launchOptions: nil];
+        [[RCTRootView alloc] initWithBridge: delegate.bridge
+                             moduleName:@"MyReactNativeApp"
+                            initialProperties:nil];
+    
+    
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view = rootView;
     [self presentViewController:vc animated:YES completion:nil];
 }
+
 
 @end

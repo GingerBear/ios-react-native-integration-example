@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <React/RCTBundleURLProvider.h>
 
 @interface AppDelegate ()
 
@@ -14,9 +15,16 @@
 
 @implementation AppDelegate
 
+@synthesize bridge;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+    bridge = [[RCTBridge alloc] initWithBundleURL:jsCodeLocation
+                                   moduleProvider:nil
+                                    launchOptions:launchOptions];
+    
     return YES;
 }
 

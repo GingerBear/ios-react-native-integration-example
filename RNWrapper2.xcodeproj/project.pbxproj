@@ -388,6 +388,7 @@
 				28019D481F72F99600D5019B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
